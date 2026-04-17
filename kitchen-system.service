@@ -1,0 +1,14 @@
+[Unit]
+Description=kitchen_safety System
+After=network.target
+
+[Service]
+Type=forking
+User=orangepi
+WorkingDirectory=/home/orangepi/kitchen-safety_release
+ExecStart=/bin/bash -c 'source venv/bin/activate && nohup python kitchen_safety.py config.json &'
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
