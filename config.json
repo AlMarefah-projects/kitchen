@@ -1,11 +1,6 @@
 {
     "streams": [
-        {
-            "sn": "Kitchen Cam1",
-            "local_video": true,
-            "video_source": "rtsp://admin:hajj1446@192.168.8.103:554/Streaming/Channels/101",
-            "local_video_source": "demo/kitchen-test.mp4"
-        }
+
     ],
     "model": "models/kitchen-detection-model_rknn_model",
     "person_model": "models/person-april21-yolo11n_rknn_model",
@@ -27,8 +22,8 @@
     "livestream": false,
     "logging_level": "debug",
     "iou_threshold": 0.01,
-    "data_send_url": "https://hajjdrf.aihajjservices.com/camera/create-kitchen-violation-report/",
-    "heartbeat_url": "https://hajjdrf.aihajjservices.com/camera/create-camera-heartbeat/",
+    "data_send_url": "https://orangepi.baitguests2.com/camera/create-kitchen-violation-report/",
+    "heartbeat_url": "https://orangepi.baitguests2.com/camera/create-camera-heartbeat/",
     "X-Secret-Key": "e5oNH8Yhx8eJml4bSxYw",
     "local_ip": "127.0.0.2",
     "mac_address": "c6:ea:52:f9:42:be"
