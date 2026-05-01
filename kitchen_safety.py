@@ -124,7 +124,7 @@ def send_heartbeat(camera_sn):
 # =========================
 def process_camera(camera):
     camera_sn = camera["sn"]
-    rtsp_url = camera["url"]
+    rtsp_url = camera["video_source"]
 
     print(f"[{camera_sn}] Starting...")
 
